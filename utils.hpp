@@ -14,7 +14,7 @@ class sys_utils
 public:
   static std::string exec(const string &aCmd)
   {
-    MYLOG2();
+    //MYLOG2();
 
     std::string result = "";
     try

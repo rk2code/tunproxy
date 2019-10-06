@@ -17,7 +17,6 @@ using boost::asio::ip::tcp;
 inline void write_log(int prefix, short verbose, short verbose_level, int session_id, const std::string& what, const std::string& error_message = "")
 {
   MYMSGS("" << what << " ||| " << error_message);
-  return;
 }
 
 //--------------------------------------------------------------------------------

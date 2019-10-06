@@ -35,14 +35,12 @@ namespace my_tun
         : m_descriptor(_io_service)
         , m_name()
     {
-      MYLOG2();
+      //MYLOG2();
     }
-    tun_adapter(const tun_adapter&) = delete;
-    tun_adapter& operator=(const tun_adapter&) = delete;
 
     ~tun_adapter()
     {
-      MYLOG2();
+      //MYLOG2();
     }
 
     //---------------------------------------------------------------------
@@ -51,7 +49,7 @@ namespace my_tun
     template <typename MutableBufferSequence, typename ReadHandler>
     void async_read(const MutableBufferSequence& buffers, ReadHandler handler)
     {
-      MYLOG2();
+      //MYLOG2();
       m_descriptor.async_read_some(buffers, handler);
     }
 

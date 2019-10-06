@@ -12,7 +12,9 @@ using namespace my_utils;
 //------------------------------------------------------------------------------
 void tun_adapter::open(const std::string& _name)
 {
-  MYLOG2();
+  //MYLOG2();
+
+  // TODO/FIXME: improve error handling!
 
   boost::system::error_code ec = boost::system::error_code();
 
@@ -76,7 +78,7 @@ void tun_adapter::open(const std::string& _name)
 //------------------------------------------------------------------------------
 fd_handler tun_adapter::open_device(const std::string& name)
 {
-  MYLOG2();
+  //MYLOG2();
 
   const int device_fd = ::open(name.c_str(), O_RDWR);
   if (device_fd < 0) return fd_handler();
@@ -87,7 +89,7 @@ fd_handler tun_adapter::open_device(const std::string& name)
 //------------------------------------------------------------------------------
 fd_handler tun_adapter::open_socket(int family)
 {
-  MYLOG2();
+  //MYLOG2();
 
   const int socket_fd = ::socket(family, SOCK_DGRAM, 0);
   if (socket_fd < 0) return fd_handler();
@@ -131,6 +133,7 @@ void tun_adapter::set_connected_state(bool connected)
 //------------------------------------------------------------------------------
 void tun_adapter::configure()
 {
+  // TODO/FIXME: make it configurable!
   std::string tunaddr = "10.0.0.15";
   std::string tunroute = "10.0.0.0/24";
   MYMSGS(sys_utils::exec("ip route add dev " + m_name + " " + tunaddr));
