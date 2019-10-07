@@ -7,6 +7,12 @@ Boost.Asio is a cross-platform C++ library for network and low-level I/O program
 TUN proxy goal: using TUN virtual interface redirect all UDP traffic to Socks5 proxy using TCP connection.
 
 ----------------
+Some features:
+1. uses non-blocking IO;
+2. does logging/tracing (captured packet raw output, structured info, current thread info);
+3. captures only UDP traffic (not TCP);
+
+----------------
 How to build:
 1. you should have Ubuntu 18.04 host (docker image prepare script is in progress, but not finished, sorry);
 
