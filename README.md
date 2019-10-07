@@ -9,8 +9,9 @@ TUN proxy goal: using TUN virtual interface redirect all UDP traffic to Socks5 p
 ----------------
 Some features:
 1. uses non-blocking IO;
-2. does logging/tracing (captured packet raw output, structured info, current thread info);
-3. captures only UDP traffic (not TCP);
+2. uses TUN virtual device/interface;
+3. does logging/tracing (captured packet raw output, structured info, current thread info);
+4. captures only UDP traffic (not TCP);
 
 ----------------
 How to build:
