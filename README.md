@@ -42,6 +42,7 @@ TODO:
 8. more configuration (less hardcoded params) TBD;
 
 
+----------------
 References used:
 1. freelan-vpn;
 2. libtins;
