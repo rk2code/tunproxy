@@ -54,9 +54,3 @@ TODO:
 7. more clear "how to run" doc TBD;
 8. more configuration (less hardcoded params) TBD;
 
-
-----------------
-References used:
-1. freelan-vpn;
-2. libtins;
-3. socks5proxy sample implementation;
