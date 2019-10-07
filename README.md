@@ -13,6 +13,10 @@ Some features:
 3. does logging/tracing (captured packet raw output, structured info, current thread info);
 4. captures only UDP traffic (not TCP);
 
+
+See run example screenshot: tunproxy.png
+
+
 ----------------
 How to build:
 1. you should have Ubuntu 18.04 host (docker image prepare script is in progress, but not finished, sorry);
